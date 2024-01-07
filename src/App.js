@@ -346,7 +346,18 @@ function App() {
       }}
     >
       <div className="App" style={{ "--header-height": `${headerHeight}px` }}>
-        <PhotographyPage/>
+      {
+          <main style={{ marginTop: headerHeight, marginBottom: footerHeight }}>
+            <ScrollToTopButton />
+            <AnimatePresence exitBeforeEnter>
+              <Suspense fallback={<></>}>
+                <Routes>
+                  <Route path="/" element={<PhotographyPage />} />
+                </Routes>
+              </Suspense>
+            </AnimatePresence>
+          </main>
+        }
       </div>
     </GlobalContext.Provider>
   )
