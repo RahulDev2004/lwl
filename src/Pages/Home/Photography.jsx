@@ -29,25 +29,26 @@ import { addZeroBeforeNumber } from "../../Functions/Utilities";
 
 // Data
 import { blogData } from "../../Components/Blogs/BlogData";
+import InteractiveBanners15 from '../../Components/InteractiveBanners/InteractiveBanners15';
 
 const InteractiveBannersData = [
     {
         title: "Work-Shops",
-        img: "https://via.placeholder.com/600x816",
+        img: "assets/img/lwl/image3.jpg",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
     },
     {
         title: "Skill-Training",
-        img: "https://via.placeholder.com/600x816",
+        img: "assets/img/lwl/image4.jpeg",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
     },
     {
         title: "Hack-athons",
-        img: "https://via.placeholder.com/600x816",
+        img: "assets/img/lwl/image5.jpg",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
@@ -325,12 +326,14 @@ const PhotographyPage = (props) => {
                 </section>
                 {/* Section End */}
 
-                <section className="py-[160px] cover-background overflow-hidden lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]" style={{ backgroundImage: "#fff" }}>
+
+
+                <section className="py-[160px] cover-background overflow-hidden lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]" style={{ backgroundImage: "url('assets/img/lwl/background.jpg')" }}>
                     <Container fluid>
                         <m.div className="row justify-end items-end mb-[200px] sm:mb-0">
                             <Col xl={3} lg={5} md={6} className="sm:mb-[30px]">
-                                <h2 className="font-serif font-semibold text-basecolor mb-12 md:w-[95%]">about us</h2>
-                                <span className="text-lg leading-[36px] inline-block w-[75%] lg:w-[90%] opacity-60 md:text-xmd xs:leading-[22px]">We are commited to nurturing tomorrow's leaders through Innovative educational solutions like Workshops, Hackathons and Skillforce Training exclusively for Entreprenuers.</span>
+                                <h2 className="font-serif font-semibold text-white mb-12 md:w-[95%]">about us</h2>
+                                <span className="text-lg text-white leading-[36px] inline-block w-[75%] lg:w-[90%] opacity-60 md:text-xmd xs:leading-[22px]">We are commited to nurturing tomorrow's leaders through Innovative educational solutions like Workshops, Hackathons and Skillforce Training exclusively for Entreprenuers.</span>
                             </Col>
                             <m.div className="col-lg-3 col-md-6" {...fadeInLeft}>
                                 <span className="w-[90px] h-[1px] bg-basecolor inline-block align-middle mr-[18px]"></span>
@@ -361,7 +364,7 @@ const PhotographyPage = (props) => {
                     <Container fluid>
                         <Row className="justify-center">
                             <Col xs={12} lg={11} sm={8}>
-                                <InteractiveBanners06 grid="row-cols-lg-3 gap-y-10 justify-center" data={InteractiveBannersData} animation={fadeIn} />
+                                <InteractiveBanners15 grid="row-cols-lg-3 gap-y-10 justify-center" data={InteractiveBannersData} animation={fadeIn} />
                             </Col>
                         </Row>
                     </Container>
