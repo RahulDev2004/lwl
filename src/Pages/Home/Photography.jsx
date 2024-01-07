@@ -34,7 +34,7 @@ import InteractiveBanners15 from '../../Components/InteractiveBanners/Interactiv
 const InteractiveBannersData = [
     {
         title: "Work-Shops",
-        img: "assets/img/lwl/image3.jpg",
+        img: "assets/img/workshop.png",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
@@ -140,16 +140,16 @@ const portfolioClassicData = [
 
 const clientData = [
     {
-        img: "https://via.placeholder.com/225x110"
+        img: "/assets/img/rflogo.png"
     },
     {
-        img: "https://via.placeholder.com/225x110"
+        img: "/assets/img/lnlogo.png"
     },
     {
-        img: "https://via.placeholder.com/225x110"
+        img: "/assets/img/myprobuddy.png"
     },
     {
-        img: "https://via.placeholder.com/225x110"
+        img: "/assets/img/rook.png"
     }
 ]
 
@@ -218,7 +218,7 @@ const PhotographyPage = (props) => {
                 <div className="bg-black sidebar-nav-action h-[100vh] md:h-auto w-[65px] md:w-full py-[30px] flex flex-col md:flex-row md:justify-between md:px-[30px] md:py-[15px] sm:px-[15px]">
                     <Col className="flex justify-center md:justify-start">
                         <Link aria-label="header logo" to="/">
-                            <img width={30} height={35} className="max-h-[36px]" alt="" src="/assets/img/webp/symbol.webp" />
+                            <img width={30} height={35} className="max-h-[36px]" alt="" src="/logo.png" />
                         </Link>
                     </Col>
                     <Col className="flex items-center justify-center xs:justify-end">
@@ -468,11 +468,11 @@ const PhotographyPage = (props) => {
                             <Row>
                                 <Col md={3} className="sm:mb-[20px]">
                                     <Link aria-label="link for" to="/" className="sm:flex sm:justify-center">
-                                        <img className="max-h-[36px] align-middle" alt='logo' src="/assets/img/webp/logo-white.webp" width="111" height="36" />
+                                        <img className="max-h-[40px] align-middle" alt='logo' src="/logo.png" width="45" height="40" />
                                     </Link>
                                 </Col>
                                 <Col md={6} className="flex justify-center items-center text-center sm:mb-[20px]">
-                                    <p className="mb-0">© {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="footer link" rel="noreferrer" className="text-white font-medium underline underline-offset-4" href="https://www.themezaa.com/" target="_blank">ThemeZaa</a></p>
+                                    <p className="mb-0">© {new Date().getFullYear()} Lead with Legacies is Proudly Powered by <a aria-label="footer link" rel="noreferrer" className="text-white font-medium underline underline-offset-4" href="https://www.themezaa.com/" target="_blank">Rook Fellows</a></p>
                                 </Col>
                                 <Col md={3} className="text-right footer-icon sm:text-center">
                                     <SocialIcons theme="social-icon-style-01" className="justify-end sm:justify-center" size="xs" iconColor="light" data={FooterIconData} />
