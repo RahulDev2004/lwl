@@ -16,7 +16,7 @@ import { fadeIn, fadeInLeft, zoomIn } from '../../Functions/GlobalAnimations'
 import Buttons from '../../Components/Button/Buttons'
 import Overlap from '../../Components/Overlap/Overlap'
 import Clients from '../../Components/Clients/Clients'
-import InteractiveBanners06 from '../../Components/InteractiveBanners/InteractiveBanners06'
+import InteractiveBanners15 from '../../Components/InteractiveBanners/InteractiveBanners15'
 import PortfolioJustifiedGallery from '../../Components/Portfolio/PortfolioJustifiedGallery'
 import TestimonialsCarousel09 from '../../Components/TestimonialCarousel/TestimonialsCarousel09'
 import BlogMetro from '../../Components/Blogs/BlogMetro';
@@ -325,16 +325,16 @@ const PhotographyPage = (props) => {
                 </section>
                 {/* Section End */}
 
-                <section className="py-[160px] cover-background overflow-hidden lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]" style={{ backgroundImage: "#fff" }}>
-                    <Container fluid>
+                <section className="py-[160px] cover-background overflow-hidden lg:py-[120px] backdrop-brightness-50 md:py-[95px] sm:py-[80px] xs:py-[50px]" style={{ backgroundImage: `url(/assets/img/photo8.png)` }}>
+                    <Container fluid >
                         <m.div className="row justify-end items-end mb-[200px] sm:mb-0">
                             <Col xl={3} lg={5} md={6} className="sm:mb-[30px]">
-                                <h2 className="font-serif font-semibold text-basecolor mb-12 md:w-[95%]">about us</h2>
-                                <span className="text-lg leading-[36px] inline-block w-[75%] lg:w-[90%] opacity-60 md:text-xmd xs:leading-[22px]">We are commited to nurturing tomorrow's leaders through Innovative educational solutions like Workshops, Hackathons and Skillforce Training exclusively for Entreprenuers.</span>
+                                <h2 className="font-serif font-semibold text-[#000] mb-12 md:w-[95%]">About Us</h2>
+                                <span className="text-lg leading-[36px] text-[#000] inline-block w-[75%] lg:w-[90%] opacity-250 md:text-xmd xs:leading-[22px]">We are commited to nurturing tomorrow's leaders through Innovative educational solutions like Workshops, Hackathons and Skillforce Training exclusively for Entreprenuers.</span>
                             </Col>
                             <m.div className="col-lg-3 col-md-6" {...fadeInLeft}>
-                                <span className="w-[90px] h-[1px] bg-basecolor inline-block align-middle mr-[18px]"></span>
-                                <a aria-label="gmail" href="mailto:hello@yourdomain.com" className="font-serif text-white">hello@yourdomain.com</a>
+                                <span className="w-[90px] h-[1px] bg-[#000] inline-block align-middle mr-[18px]"></span>
+                                <a aria-label="gmail" href="mailto:hello@yourdomain.com" className="font-serif text-black">hello@yourdomain.com</a>
                             </m.div>
                         </m.div>
                     </Container>
@@ -361,7 +361,7 @@ const PhotographyPage = (props) => {
                     <Container fluid>
                         <Row className="justify-center">
                             <Col xs={12} lg={11} sm={8}>
-                                <InteractiveBanners06 grid="row-cols-lg-3 gap-y-10 justify-center" data={InteractiveBannersData} animation={fadeIn} />
+                                <InteractiveBanners15 grid="row-cols-lg-3 gap-y-10 justify-center" data={InteractiveBannersData} animation={fadeIn} />
                             </Col>
                         </Row>
                     </Container>
