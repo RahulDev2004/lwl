@@ -33,21 +33,21 @@ import InteractiveBanners15 from '../../Components/InteractiveBanners/Interactiv
 
 const InteractiveBannersData = [
     {
-        title: "Work-Shops",
+        title: "Workshops",
         img: "assets/img/workshop.png",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
     },
     {
-        title: "Skill-Training",
+        title: "SkillTraining",
         img: "assets/img/skill.png",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
     },
     {
-        title: "Hack-athons",
+        title: "Hackathons",
         img: "assets/img/hackathon.png",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
