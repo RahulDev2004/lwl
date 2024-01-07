@@ -16,7 +16,7 @@ import { fadeIn, fadeInLeft, zoomIn } from '../../Functions/GlobalAnimations'
 import Buttons from '../../Components/Button/Buttons'
 import Overlap from '../../Components/Overlap/Overlap'
 import Clients from '../../Components/Clients/Clients'
-import InteractiveBanners15 from '../../Components/InteractiveBanners/InteractiveBanners15'
+// import InteractiveBanners15 from '../../Components/InteractiveBanners/InteractiveBanners15'
 import PortfolioJustifiedGallery from '../../Components/Portfolio/PortfolioJustifiedGallery'
 import TestimonialsCarousel09 from '../../Components/TestimonialCarousel/TestimonialsCarousel09'
 import BlogMetro from '../../Components/Blogs/BlogMetro';
@@ -29,25 +29,26 @@ import { addZeroBeforeNumber } from "../../Functions/Utilities";
 
 // Data
 import { blogData } from "../../Components/Blogs/BlogData";
+import InteractiveBanners15 from '../../Components/InteractiveBanners/InteractiveBanners15';
 
 const InteractiveBannersData = [
     {
         title: "Work-Shops",
-        img: "https://via.placeholder.com/600x816",
+        img: "assets/img/lwl/image3.jpg",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
     },
     {
         title: "Skill-Training",
-        img: "https://via.placeholder.com/600x816",
+        img: "assets/img/skill.png",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
     },
     {
         title: "Hack-athons",
-        img: "https://via.placeholder.com/600x816",
+        img: "assets/img/hackathon.png",
         btnTitle: "Portfolio",
         btnLink: "/portfolio/portfolio-justified-gallery",
         imgLink: "#"
@@ -114,27 +115,27 @@ const portfolioClassicData = [
         subtitle: "Educamp",
         link: "#"
     },
-    {
-        title: "Photography",
-        img: "https://via.placeholder.com/600x819",
-        category: [""],
-        subtitle: "Cortifiel",
-        link: "#"
-    },
-    {
-        title: "Photography",
-        img: "https://via.placeholder.com/600x819",
-        category: [""],
-        subtitle: "Instacuppa",
-        link: "#"
-    },
-    {
-        title: "Photography",
-        img: "https://via.placeholder.com/600x819",
-        category: [""],
-        subtitle: "Pendant",
-        link: "#"
-    }
+    // {
+    //     title: "Photography",
+    //     img: "https://via.placeholder.com/600x819",
+    //     category: [""],
+    //     subtitle: "Cortifiel",
+    //     link: "#"
+    // },
+    // {
+    //     title: "Photography",
+    //     img: "https://via.placeholder.com/600x819",
+    //     category: [""],
+    //     subtitle: "Instacuppa",
+    //     link: "#"
+    // },
+    // {
+    //     title: "Photography",
+    //     img: "https://via.placeholder.com/600x819",
+    //     category: [""],
+    //     subtitle: "Pendant",
+    //     link: "#"
+    // }
 ]
 
 const clientData = [
@@ -222,14 +223,14 @@ const PhotographyPage = (props) => {
                     </Col>
                     <Col className="flex items-center justify-center xs:justify-end">
                         <Navbar className="inline-block" variant="dark">
-                            <Navbar.Toggle className="push-button" onClick={() => setShow(!show)}>
+                            {/* <Navbar.Toggle className="push-button" onClick={() => setShow(!show)}>
                                 <Link aria-label="link for" to="#" onClick={(e) => e.preventDefault()} className="nav-icon">
                                     <span className="navbar-toggler-line"></span>
                                     <span className="navbar-toggler-line"></span>
                                     <span className="navbar-toggler-line"></span>
                                     <span className="navbar-toggler-line"></span>
                                 </Link>
-                            </Navbar.Toggle>
+                            </Navbar.Toggle> */}
                             <div className={`left-menu-wrapper flex items-center w-[380px] bg-[#000] hover:bg-darkgray md:hover:bg-[#000] transition-default fixed top-[var(--header-height)] left-[65px] md:left-0 xs:w-full -z-10 h-[calc(100vh-var(--header-height))]${show ? " show" : ""}`}>
                                 <div className="col-12 h-full px-[3.5rem] sm:px-4">
                                     <ReactCustomScrollbar className="pl-[15px]" theme="light" autoHide>
@@ -373,16 +374,16 @@ const PhotographyPage = (props) => {
                     <Container>
                         <Row>
                             <m.div className="md:mb-[50px] xs:mb-[35px] col-xl-5 col-lg-6 col-md-7" {...fadeIn}>
-                                <h2 className="heading-3 font-serif font-semibold text-white mb-[30px] xs:mb-8">I am always ready for a challenge.</h2>
+                                <h2 className="heading-3 font-serif font-semibold text-white mb-[30px] xs:mb-8">Shaping Industry Ready Entrpreneur.</h2>
                                 <Buttons ariaLabel="link for" to="/portfolio/portfolio-justified-gallery" className="font-medium border-0 flex items-center font-serif uppercase md:mb-[15px] hover:text-white p-0 xs:mb-0" size="xl" color="#c7da26" title="Explore portfolio" icon="line-icon-Arrow-OutRight ml-[15px] text-[40px]" iconPosition="after" />
                             </m.div>
                             <m.div className="xs:mb-[35px] col-lg-3 col-sm-6 offset-xl-1" {...{ ...fadeInLeft, transition: { delay: 0.4, duration: 1, ease: "circOut" } }}>
-                                <span className="text-lg inline-block mb-[15px] font-serif text-white xs:text-xmd xs:leading-[22px]">15+ Award winner</span>
-                                <p className="text-lg leading-[36px] inline-block w-[90%] opacity-60 xs:text-xmd xs:leading-[22px]">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+                                <span className="text-lg inline-block mb-[15px] font-serif text-white xs:text-xmd xs:leading-[22px]">20+ Skills</span>
+                                <p className="text-lg leading-[36px] inline-block w-[90%] opacity-60 xs:text-xmd xs:leading-[22px]">Learn from a variety of Skill-set to shape your Enterpreneur Journey.</p>
                             </m.div>
                             <m.div className="col-lg-3 col-sm-6" {...{ ...fadeInLeft, transition: { delay: 0.6, duration: 1, ease: "circOut" } }}>
-                                <span className="text-lg inline-block mb-[15px] font-serif text-white xs:text-xmd xs:leading-[22px]">13+ Years experience</span>
-                                <p className="text-lg leading-[36px] inline-block w-[90%] opacity-60 xs:text-xmd xs:leading-[22px]">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+                                <span className="text-lg inline-block mb-[15px] font-serif text-white xs:text-xmd xs:leading-[22px]">35+ Workshops</span>
+                                <p className="text-lg leading-[36px] inline-block w-[90%] opacity-60 xs:text-xmd xs:leading-[22px]">Workshops that help you keep updated and expose you lots of startup insights.</p>
                             </m.div>
                         </Row>
                     </Container>
@@ -398,7 +399,7 @@ const PhotographyPage = (props) => {
 
                 {/* Section start */}
                 <m.div className="relative overflow-hidden pb-[130px] lg:pb-[90px] md:pb-[100px] sm:pb-[50px] sm:px-[15px]" {...fadeIn}>
-                    <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[-30px] left-0 h-[100vh] w-full" translateY={[-40, 40]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
+                    <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[-30px] left-0 h-[100vh] w-full" translateY={[-40, 40]} style={{ backgroundImage: "#fff" }}></Parallax>
                     <m.div {...fadeIn}>
                         <Container>
                             <Row className="justify-center">
@@ -433,7 +434,7 @@ const PhotographyPage = (props) => {
                         <Row>
                             <Overlap className="mb-[90px] sm:mb-[50px] xs:mb-12">
                                 <Col className="text-center relative">
-                                    <span className="font-serif font-semibold inline-block text-[11rem] leading-[11rem] text-gradient photography-bg-gradient -tracking-[7px] lg:-tracking-[1.5px] sm:text-[8rem] xs:text-[5rem]">memories</span>
+                                    <span className="font-serif font-semibold inline-block text-[11rem] leading-[11rem] text-gradient photography-bg-gradient -tracking-[7px] lg:-tracking-[1.5px] sm:text-[8rem] xs:text-[5rem]">partners</span>
                                 </Col>
                             </Overlap>
                         </Row>
@@ -447,10 +448,10 @@ const PhotographyPage = (props) => {
                     <Container>
                         <Row className="items-center">
                             <Col lg={6} sm={8} className="text-left xs:mb-[15px] xs:text-center">
-                                <h2 className="heading-4 font-serif font-semibold text-white mb-0">Latest blog posts</h2>
+                                <h2 className="heading-4 font-serif font-semibold text-white mb-0">Latest Events</h2>
                             </Col>
                             <Col lg={6} sm={4} className="text-right xs:text-center">
-                                <Buttons ariaLabel="link for" to="/blogs/blog-metro" className="font-medium font-serif uppercase btn-link after:h-[2px] md:text-md md:mb-[15px] after:bg-[#c7da26] hover:text-basecolor hover:bg-basecolor" size="xl" color="#c7da26" title="View all post" />
+                                <Buttons ariaLabel="link for" to="/blogs/blog-metro" className="font-medium font-serif uppercase btn-link after:h-[2px] md:text-md md:mb-[15px] after:bg-[#c7da26] hover:text-basecolor hover:bg-basecolor" size="xl" color="#c7da26" title="View all Events" />
                             </Col>
                         </Row>
                     </Container>
